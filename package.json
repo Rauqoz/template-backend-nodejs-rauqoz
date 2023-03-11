@@ -12,7 +12,7 @@
 		"start": "node index.js",
 		"dev": "nodemon index.js",
 		"test": "npm run test:demo",
-		"test:demo": "jest --config=jest.template.js --forceExit",
+		"test:demo": "jest --config=jest.template.js --forceExit --verbose=true",
 		"prepare": "husky install",
 		"commit": "git-cz"
 	},
