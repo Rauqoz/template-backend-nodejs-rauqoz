@@ -1,0 +1,34 @@
+openapi: 3.0.1
+info:
+  title: Here you can change the Title
+  description: Here you can change the Description
+  version: 1.0.0
+servers:
+- url: http://localhost:4000
+  description: Local test URL
+components: 
+  schemas:
+    templateSchema:
+      type: object
+      properties:
+        text:
+          type: String
+          description: example to property in schema
+      example:
+        text: I'm a test
+paths:
+  "/template":
+    get:
+      description: Template Get
+      tags:
+      - Template Requets
+      responses:
+        '200':
+          description: Template Get Result
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/templateSchema"
+
