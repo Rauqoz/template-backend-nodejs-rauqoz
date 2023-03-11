@@ -1,7 +1,4 @@
-# Template for Development Full Stack MERN
-
-Mono Repo
-
+# Template for Development Full Stack MERN - BackEnd
 ## Back End
 ### Integrations and Structures
 
@@ -11,7 +8,7 @@ Mono Repo
     4. Swagger Documentation
     5. File for Deploy Mono Repos with Vercel
 
->Remember check the index file in "backend" folder
+>Remember check the README.md inside all folders
 
 You can start using:
 
@@ -25,24 +22,15 @@ And run the backend with nodemon
 
     npm start
 
-## Front End
-### Integrations and Structures
+You can commit (to use the standard) with:
 
-    1. React (create-react-app)
-    2. React-Router-Dom@6 (v6)
-    3. Socket IO (Client)
-    4. Styled-Components
+    npm run commit
 
->Remember check the App file in "frontend/src" folder
+### End-Points
+    (main route "/" return true just to check if works)
 
-You can start using:
-
-    npm install
-
-And run the frontend
-
-    npm start
-
+    /version - version of the API
+    /api-doc - local swagger documentation
 
 ## Feedback
 
